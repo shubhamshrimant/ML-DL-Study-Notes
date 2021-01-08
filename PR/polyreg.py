@@ -29,7 +29,7 @@ X_poly = poly_reg.fit_transform(X)
 lin_reg_2 = LinearRegression()
 lin_reg_2.fit(X_poly, y)
 
-X_test1=poly_reg.transform(X_test)
+X_test1=poly_reg.transform([[4]])
 y_pred=lin_reg_2.predict(X_test1)
 print(y_pred)
 
